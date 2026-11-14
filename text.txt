@@ -1,0 +1,18 @@
+birthday-website/
+├── index.html          ← Home / Landing
+├── wishes.html         ← Birthday Wishes
+├── memories.html       ← Photo Gallery
+├── video.html          ← Video
+├── shayari.html        ← Urdu Shayari
+├── duas.html           ← Duas
+├── final.html          ← Final Surprise
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── (apni photos yahan)
+├── videos/
+│   └── (video yahan)
+└── music/
+    └── (music yahan, optional)
