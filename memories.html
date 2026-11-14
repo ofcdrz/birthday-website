@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Memories 📸</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-heart">❤</div><div class="loader-text">Loading memories...</div></div>
+<div class="floating-hearts" id="hearts"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Bitiya Rani</a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wishes.html">Wishes</a></li>
+      <li><a href="memories.html" class="active">Memories</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="shayari.html">Shayari</a></li>
+      <li><a href="duas.html">Duas</a></li>
+      <li><a href="final.html">Surprise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+  <p class="page-eyebrow">A Gallery of Us</p>
+  <h1 class="page-title">
+    Our Beautiful <span class="script gold-text">Memories</span>
+  </h1>
+  <p class="page-desc">Every picture tells a story of love, laughter, and a bond that only grows stronger.</p>
+
+  <!--
+    ⚠️ YAHAN APNI PHOTOS DAALEIN
+    images/ folder mein photo1.jpg, photo2.jpg, etc. rakhein
+    Aur neeche src aur caption update karein
+  -->
+  <div class="masonry">
+    <div class="photo-item">
+      <img src="images/photo1.jpg" alt="Memory 1" loading="lazy">
+      <div class="photo-caption">The day you made our world brighter ✨</div>
+    </div>
+    <div class="photo-item">
+      <img src="images/photo2.jpg" alt="Memory 2" loading="lazy">
+      <div class="photo-caption">Your smile that lights up every room</div>
+    </div>
+    <div class="photo-item">
+      <img src="images/photo3.jpg" alt="Memory 3" loading="lazy">
+      <div class="photo-caption">Our silly moments I never want to forget</div>
+    </div>
+    <div class="photo-item">
+      <img src="images/photo4.jpg" alt="Memory 4" loading="lazy">
+      <div class="photo-caption">A little adventure, a big memory</div>
+    </div>
+    <div class="photo-item">
+      <img src="images/photo5.jpg" alt="Memory 5" loading="lazy">
+      <div class="photo-caption">The bond that words cannot describe</div>
+    </div>
+    <div class="photo-item">
+      <img src="images/photo6.jpg" alt="Memory 6" loading="lazy">
+      <div class="photo-caption">Forever my favorite person</div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">×</button>
+    <img src="" alt="Full view">
+  </div>
+</main>
+
+<button class="music-btn" id="musicBtn"><span class="music-icon">♪</span><span class="music-label">Music</span></button>
+<button class="back-top" id="backTop">↑</button>
+
+<footer>
+  <p>With all my love</p>
+  <p>Made with ❤ for Bitiya Rani</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
