@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 15% 50%, rgba(233, 213, 255, 0.15), transparent 40%), radial-gradient(circle at 85% 30%, rgba(251, 207, 232, 0.15), transparent 40%), linear-gradient(135deg, #0f0518 0%, #1a0b2e 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.glass-card {
+  @apply glass rounded-[2rem] p-6 sm:p-10 relative overflow-hidden;
+}
+.gold-text {
+  background: linear-gradient(90deg, #fef3c7, #d4af37, #fbcfe8, #d4af37, #fef3c7);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+}
+@keyframes shine { to { background-position: 200% center; } }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
