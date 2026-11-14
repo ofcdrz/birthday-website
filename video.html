@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Video Memories 🎬</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-heart">❤</div><div class="loader-text">Loading video...</div></div>
+<div class="floating-hearts" id="hearts"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Bitiya Rani</a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wishes.html">Wishes</a></li>
+      <li><a href="memories.html">Memories</a></li>
+      <li><a href="video.html" class="active">Video</a></li>
+      <li><a href="shayari.html">Shayari</a></li>
+      <li><a href="duas.html">Duas</a></li>
+      <li><a href="final.html">Surprise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+  <p class="page-eyebrow">A Living Memory</p>
+  <h1 class="page-title">
+    A Few Moments,<br>
+    <span class="script gold-text">A Lifetime of Memories.</span>
+  </h1>
+  <p class="page-desc">Press play and let the memories unfold...</p>
+
+  <!--
+    ⚠️ YAHAN APNI VIDEO DAALEIN
+    videos/ folder mein memories.mp4 rakhein
+  -->
+  <div class="video-frame">
+    <video id="memoryVideo" src="videos/memories.mp4" playsinline preload="metadata"></video>
+    <div class="play-overlay" id="playOverlay">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+    </div>
+  </div>
+</main>
+
+<button class="music-btn" id="musicBtn"><span class="music-icon">♪</span><span class="music-label">Music</span></button>
+<button class="back-top" id="backTop">↑</button>
+
+<footer>
+  <p>With all my love</p>
+  <p>Made with ❤ for Bitiya Rani</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
